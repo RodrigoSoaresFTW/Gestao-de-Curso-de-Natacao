@@ -1,0 +1,16 @@
+D:\!Caverex\!Projetos\BootCampKain\Gestao-de-Curso-de-Natacao\gestao_ui_console\bin\Debug\net5.0\Gestao_ui_console.exe
+D:\!Caverex\!Projetos\BootCampKain\Gestao-de-Curso-de-Natacao\gestao_ui_console\bin\Debug\net5.0\Gestao_ui_console.deps.json
+D:\!Caverex\!Projetos\BootCampKain\Gestao-de-Curso-de-Natacao\gestao_ui_console\bin\Debug\net5.0\Gestao_ui_console.runtimeconfig.json
+D:\!Caverex\!Projetos\BootCampKain\Gestao-de-Curso-de-Natacao\gestao_ui_console\bin\Debug\net5.0\Gestao_ui_console.runtimeconfig.dev.json
+D:\!Caverex\!Projetos\BootCampKain\Gestao-de-Curso-de-Natacao\gestao_ui_console\bin\Debug\net5.0\Gestao_ui_console.dll
+D:\!Caverex\!Projetos\BootCampKain\Gestao-de-Curso-de-Natacao\gestao_ui_console\bin\Debug\net5.0\ref\Gestao_ui_console.dll
+D:\!Caverex\!Projetos\BootCampKain\Gestao-de-Curso-de-Natacao\gestao_ui_console\bin\Debug\net5.0\Gestao_ui_console.pdb
+D:\!Caverex\!Projetos\BootCampKain\Gestao-de-Curso-de-Natacao\gestao_ui_console\obj\Debug\net5.0\Gestao_ui_console.csprojAssemblyReference.cache
+D:\!Caverex\!Projetos\BootCampKain\Gestao-de-Curso-de-Natacao\gestao_ui_console\obj\Debug\net5.0\Gestao_ui_console.GeneratedMSBuildEditorConfig.editorconfig
+D:\!Caverex\!Projetos\BootCampKain\Gestao-de-Curso-de-Natacao\gestao_ui_console\obj\Debug\net5.0\Gestao_ui_console.AssemblyInfoInputs.cache
+D:\!Caverex\!Projetos\BootCampKain\Gestao-de-Curso-de-Natacao\gestao_ui_console\obj\Debug\net5.0\Gestao_ui_console.AssemblyInfo.cs
+D:\!Caverex\!Projetos\BootCampKain\Gestao-de-Curso-de-Natacao\gestao_ui_console\obj\Debug\net5.0\Gestao_ui_console.csproj.CoreCompileInputs.cache
+D:\!Caverex\!Projetos\BootCampKain\Gestao-de-Curso-de-Natacao\gestao_ui_console\obj\Debug\net5.0\Gestao_ui_console.dll
+D:\!Caverex\!Projetos\BootCampKain\Gestao-de-Curso-de-Natacao\gestao_ui_console\obj\Debug\net5.0\ref\Gestao_ui_console.dll
+D:\!Caverex\!Projetos\BootCampKain\Gestao-de-Curso-de-Natacao\gestao_ui_console\obj\Debug\net5.0\Gestao_ui_console.pdb
+D:\!Caverex\!Projetos\BootCampKain\Gestao-de-Curso-de-Natacao\gestao_ui_console\obj\Debug\net5.0\Gestao_ui_console.genruntimeconfig.cache
