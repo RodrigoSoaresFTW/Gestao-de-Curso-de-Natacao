@@ -2,12 +2,13 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Gestao_ui_console.Entities;
 
 namespace Gestao_ui_console.Assets
 {
     public class menus
     {
-        public void menuAluno(){
+        public void menuAluno(List<Aluno> alunos){
             int opAluno;
             try{
                 Console.WriteLine("[1] - LISTAS ALUNOS");
@@ -20,13 +21,15 @@ namespace Gestao_ui_console.Assets
                 switch(opAluno){
                 case 1: 
                         Console.Clear();
-                        Console.WriteLine("LISTAS ALUNOS");
+                        Aluno a1 = new Aluno();
+                        a1.ListarAlunos(alunos);
                         Console.ReadKey();
                 break;
 
                 case 2: 
                         Console.Clear();
-                        Console.WriteLine("CADASTRO ALUNO");
+                        Aluno a2 = new Aluno();
+                        a2.CadastrarAlunos(alunos);
                         Console.ReadKey();
                 break;
 

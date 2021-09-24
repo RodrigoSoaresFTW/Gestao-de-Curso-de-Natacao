@@ -3,7 +3,7 @@ using System.ComponentModel;
 using System;
 using Gestao_ui_console.Entities;
 using Gestao_ui_console.Assets;
-
+using System.Collections.Generic;
 
 namespace Gestao_ui_console
 {
@@ -11,10 +11,16 @@ namespace Gestao_ui_console
     {
         static void Main(string[] args)
         {
+            List<Aluno> alunos = new List<Aluno>();
+            List<Professor> professores = new List<Professor>();
+            List<Turma> turmas = new List<Turma>();
+            
             int op = 0;
+
             do{
                 try{
                     Console.Clear();
+                    Console.WriteLine("SGAN - Sistema de Gestão de Aulas de Natação");
                     Console.WriteLine("[1] - GESTAO DE PROFESSORES");
                     Console.WriteLine("[2] - GESTAO DE ALUNOS");
                     Console.WriteLine("[3] - GESTAO DE TURMAS");
@@ -34,7 +40,7 @@ namespace Gestao_ui_console
                         case 2: 
                         Console.Clear();
                         menus menu = new menus();
-                        menu.menuAluno();
+                        menu.menuAluno(alunos);
                         break;
 
                         case 3: 
