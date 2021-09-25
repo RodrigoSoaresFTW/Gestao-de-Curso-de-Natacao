@@ -41,7 +41,8 @@ namespace Gestao_ui_console.Assets
 
                 case 4: 
                         Console.Clear();
-                        Console.WriteLine("EXCLUSÃO ALUNO");
+                        Aluno a3 = new Aluno();
+                        a3.ExcluirAluno(alunos);
                         Console.ReadKey();
                 break;
 
@@ -58,5 +59,13 @@ namespace Gestao_ui_console.Assets
                     Console.ReadKey();
             }
         }
+
+        
+        public void msgErro(string erro){
+                        Console.Clear();
+                        Console.WriteLine(erro+" INVALIDO(A)");
+                        Console.ReadKey();
+        }
     }
+
 }

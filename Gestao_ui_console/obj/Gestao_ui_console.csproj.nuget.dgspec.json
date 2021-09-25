@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\!Caverex\\!Projetos\\BootCampKain\\Gestao-de-Curso-de-Natacao\\gestao_ui_console\\Gestao_ui_console.csproj": {}
+    "D:\\!Caverex\\!Projetos\\BootCampKain\\Gestao-de-Curso-de-Natacao\\Gestao_ui_console\\Gestao_ui_console.csproj": {}
   },
   "projects": {
-    "D:\\!Caverex\\!Projetos\\BootCampKain\\Gestao-de-Curso-de-Natacao\\gestao_ui_console\\Gestao_ui_console.csproj": {
+    "D:\\!Caverex\\!Projetos\\BootCampKain\\Gestao-de-Curso-de-Natacao\\Gestao_ui_console\\Gestao_ui_console.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\!Caverex\\!Projetos\\BootCampKain\\Gestao-de-Curso-de-Natacao\\gestao_ui_console\\Gestao_ui_console.csproj",
+        "projectUniqueName": "D:\\!Caverex\\!Projetos\\BootCampKain\\Gestao-de-Curso-de-Natacao\\Gestao_ui_console\\Gestao_ui_console.csproj",
         "projectName": "Gestao_ui_console",
-        "projectPath": "D:\\!Caverex\\!Projetos\\BootCampKain\\Gestao-de-Curso-de-Natacao\\gestao_ui_console\\Gestao_ui_console.csproj",
+        "projectPath": "D:\\!Caverex\\!Projetos\\BootCampKain\\Gestao-de-Curso-de-Natacao\\Gestao_ui_console\\Gestao_ui_console.csproj",
         "packagesPath": "C:\\Users\\Rodrigo Soares\\.nuget\\packages\\",
-        "outputPath": "D:\\!Caverex\\!Projetos\\BootCampKain\\Gestao-de-Curso-de-Natacao\\gestao_ui_console\\obj\\",
+        "outputPath": "D:\\!Caverex\\!Projetos\\BootCampKain\\Gestao-de-Curso-de-Natacao\\Gestao_ui_console\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Rodrigo Soares\\AppData\\Roaming\\NuGet\\NuGet.Config"
