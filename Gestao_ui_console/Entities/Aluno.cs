@@ -36,9 +36,7 @@ namespace Gestao_ui_console.Entities
             Cadastro c = new Cadastro();
             menus m = new menus();
             
-            /*
-            coloca a matrícula pra ser de 1 a 100 e adiciona a os filtros pra só aceitar dados válidos
-            */
+           
 
             try{
                 Console.Write("NOME: ");
@@ -61,11 +59,12 @@ namespace Gestao_ui_console.Entities
                             string telefone = Console.ReadLine();
                             if(telefone.Length > 0 && Regex.IsMatch(telefone, @"^[0-9]+$")){
                                 a1.telefone = telefone;
-                                
-                                Random rand = new Random();
-                                a1.matricula = rand.Next(1,100);
+
+                                //Random rand = new Random();
+                                //a1.matricula = rand.Next(1,100);
+                                a1.matricula = c.matricula(alunos);
                                 alunos.Add(a1);
-                                Console.Clear();
+                                //Console.Clear();
                                 Console.WriteLine("ALUNO CADASTRADO COM SUCESSO!");
                                 Console.ReadKey();
                             }
