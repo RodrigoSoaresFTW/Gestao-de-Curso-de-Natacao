@@ -60,11 +60,9 @@ namespace Gestao_ui_console.Entities
                             if(telefone.Length > 0 && Regex.IsMatch(telefone, @"^[0-9]+$")){
                                 a1.telefone = telefone;
 
-                                //Random rand = new Random();
-                                //a1.matricula = rand.Next(1,100);
                                 a1.matricula = c.matricula(alunos);
                                 alunos.Add(a1);
-                                //Console.Clear();
+                                Console.Clear();
                                 Console.WriteLine("ALUNO CADASTRADO COM SUCESSO!");
                                 Console.ReadKey();
                             }

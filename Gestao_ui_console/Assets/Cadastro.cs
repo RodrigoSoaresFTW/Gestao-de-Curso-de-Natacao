@@ -8,10 +8,6 @@ namespace Gestao_ui_console.Assets
 {
     public class Cadastro
     {
-            /*
-            coloca a matrícula pra ser de 1 a 100 e adiciona a os filtros pra só aceitar dados válidos
-            */
-
             public int matricula(List<Aluno>alunos){
                 Random rand = new Random();
                 int id = rand.Next(1,101);

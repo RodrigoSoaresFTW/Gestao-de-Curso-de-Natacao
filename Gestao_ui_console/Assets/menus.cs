@@ -41,8 +41,8 @@ namespace Gestao_ui_console.Assets
 
                 case 4: 
                         Console.Clear();
-                        Aluno a3 = new Aluno();
-                        a3.ExcluirAluno(alunos);
+                        Aluno a4 = new Aluno();
+                        a4.ExcluirAluno(alunos);
                         Console.ReadKey();
                 break;
 
