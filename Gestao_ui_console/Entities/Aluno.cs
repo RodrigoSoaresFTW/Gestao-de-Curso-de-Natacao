@@ -45,7 +45,7 @@ namespace Gestao_ui_console.Entities
                 if(nome.Length > 0 && Regex.IsMatch(nome, @"^[a-zA-Z]+$")){
                     a1.nome = nome;
 
-                    Console.Write("DATA NASCIMENTO: ");
+                    Console.Write("DATA DE NASCIMENTO: ");
                     string dtnascimento = Console.ReadLine();
                     if(dtnascimento.Length > 0 && Regex.IsMatch(dtnascimento, @"^([0-2]\d)/([0-2]\d)/(\d{4})$")){
                         a1.dtNascimento = Convert.ToDateTime(dtnascimento);
@@ -63,8 +63,21 @@ namespace Gestao_ui_console.Entities
                                 a1.matricula = c.matricula(alunos);
                                 alunos.Add(a1);
                                 Console.Clear();
-                                Console.WriteLine("ALUNO CADASTRADO COM SUCESSO!");
+                                Console.WriteLine("ALUNO CADASTRADO COM SUCESSO!\n");
+                                Console.WriteLine("NOME: "+a1.nome);
+                                Console.WriteLine("MATRICULA: "+a1.matricula);
+                                Console.WriteLine("DATA DE NASCIMENTO: "+a1.dtNascimento.ToString("dd/MM/yyyy"));
+                                
+                                int idade = DateTime.Now.Year - a1.dtNascimento.Year;
+                                if(DateTime.Now.DayOfYear < a1.dtNascimento.DayOfYear){
+                                idade = idade - 1;
+                                }
+
+                                Console.WriteLine("IDADE: "+idade);
+                                Console.WriteLine("E-MAIL: "+a1.email);
+                                Console.WriteLine("TELEFONE: "+a1.telefone);
                                 Console.ReadKey();
+
                             }
                             else{
                                 m.msgErro("TELEFONE");
@@ -98,7 +111,27 @@ namespace Gestao_ui_console.Entities
             }
         }
 
+        public void AtualizarAluno(List<Aluno>alunos){
+            bool encontrado = false;
+            
+            Console.WriteLine(".:MANUTENÇÃO ALUNOS");
+            Console.Write("MATRICULA: ");
+            int matricula = Convert.ToInt32( Console.ReadLine());
 
+            foreach(var aluno in alunos){
+                if(matricula == aluno.matricula){
+                    menus m = new menus();
+                    m.menuAtualizaCadastro(aluno);
+                    encontrado = true;
+                    break;
+                }
+            }
+
+            if(!encontrado){
+                Console.WriteLine("ALUNO NÃO CADASTRADO");
+                Console.ReadKey();
+            }
+        }
         public void ExcluirAluno(List<Aluno>alunos){
             Console.WriteLine(".:MENU EXCLUIR ALUNO:.");
             Console.Write("NOME: ");

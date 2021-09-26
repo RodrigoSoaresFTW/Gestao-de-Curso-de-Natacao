@@ -1,3 +1,4 @@
+using System.Text.RegularExpressions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -35,7 +36,8 @@ namespace Gestao_ui_console.Assets
 
                 case 3: 
                         Console.Clear();
-                        Console.WriteLine("MANUTENÇÃO ALUNO");
+                        Aluno a3 = new Aluno();
+                        a3.AtualizarAluno(alunos);
                         Console.ReadKey();
                 break;
 
@@ -66,6 +68,77 @@ namespace Gestao_ui_console.Assets
                         Console.WriteLine(erro+" INVALIDO(A)");
                         Console.ReadKey();
         }
-    }
 
+        public void menuAtualizaCadastro(Aluno aluno){
+            Console.Clear();
+            Console.WriteLine("ALUNO: "+aluno.nome.ToUpper()+"\n");
+            Console.WriteLine("[1] - ATUALIZAR NOME");
+            Console.WriteLine("[2] - ATUALIZAR DATA DE NASCIMENTO");
+            Console.WriteLine("[3] - ATUALIZAR E-MAIL");
+            Console.WriteLine("[4] - ATUALIZAR TELEFONE");
+            Console.WriteLine("[0] - VOLTAR");
+            Console.Write("OPCAO: ");
+            int opAC = Convert.ToInt32(Console.ReadLine());
+
+            switch(opAC){
+                case 1: 
+                    Console.Clear();
+                    Console.WriteLine(".:ATUALIZAÇÃO DE NOME:.\n");
+                    Console.Write("NOME: ");
+                    aluno.nome = Console.ReadLine();
+                    Console.WriteLine("NOME ATUALIZADO COM SUCESSO!");
+                    Console.WriteLine("NOVO NOME: "+aluno.nome);
+                break;
+                case 2:
+                    Console.Clear();
+                    Console.WriteLine(".:ATUALIZAÇÃO DE DATA DE NASCIMENTO:.\n");
+                    Console.Write("DATA DE NASCIMENTO: ");
+                    string dtnascimento = Console.ReadLine();
+                    if(dtnascimento.Length > 0 && Regex.IsMatch(dtnascimento, @"^([0-2]\d)/([0-2]\d)/(\d{4})$")){
+                        aluno.dtNascimento = Convert.ToDateTime(dtnascimento);
+                        Console.WriteLine("DATA DE NASCIMENTO ATUALIZADA COM SUCESSO!");
+                        Console.WriteLine("NOVA DATA DE NASCIMENTO: "+aluno.dtNascimento.ToString("dd/MM/yyyy"));
+                        Console.ReadKey();
+                    }
+                    else{
+                        Console.WriteLine("DATA DE NASCIMENTO INVALIDA!");
+                        Console.ReadKey();
+                    }
+                break;
+                case 3:
+                    Console.Clear();
+                    Console.WriteLine(".:ATUALIZAÇÃO DE E-MAIL:.\n");
+                    Console.Write("E-MAIL: ");
+                    string email = Console.ReadLine();
+
+                    if(email.Length > 0 && email.Contains("@") && email.Contains(".com")){
+                        aluno.email = email;
+                        Console.WriteLine("EMAIL ATUALIZADO COM SUCESSO!");
+                        Console.WriteLine("NOVO E-MAIL: "+aluno.email);
+                        Console.ReadKey();
+                    }
+                    else{
+                        Console.WriteLine("E-MAIL INVALIDO");
+                        Console.ReadKey();
+                    }
+                break;
+                case 4:
+                    Console.Clear();
+                    Console.WriteLine(".:ATUALIZACAO DE TELEFONE:.");
+                    Console.Write("INFORME O NOVO TELEFONE: ");
+                    string telefone = Console.ReadLine();
+                    if(telefone.Length > 0 && Regex.IsMatch(telefone, @"^[0-9]+$")){
+                        aluno.telefone = telefone;
+                        Console.WriteLine("TELEFONE ATUALIZADO COM SUCESSO!");
+                        Console.WriteLine("NOVO TELEFONE: "+aluno.telefone);
+                        Console.ReadKey();
+                    }
+                    else{
+                        Console.WriteLine("TELEFONE INVALIDO");
+                        Console.ReadKey();
+                    }
+                break;
+            }
+        }
+    }
 }
